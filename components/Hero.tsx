@@ -13,15 +13,15 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div className="animate-fade-in">
           <span className="inline-block py-1 px-3 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold mb-6 border border-indigo-100">
-            Intelligent Enterprise Solutions
+            Intelligent SAP Transformation Platform
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8">
-            Modernize Your ERP with <br />
-            <span className="gradient-text">Intelligent AI</span>
+            Accelerate Your <br />
+            <span className="gradient-text">S/4HANA Journey</span>
           </h1>
           <p className="mt-4 text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Vyoma brings the power of artificial intelligence to your enterprise resource planning. 
-            Streamline workflows, predict outcomes, and unlock new value from your data.
+            Transform your SAP landscape from ECC to S/4HANA with AI-powered automation. 
+            Reduce project timelines by 60% and ensure best practice adoption with Vyoma.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" variant="primary">

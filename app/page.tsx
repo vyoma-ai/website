@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
+import ProcessSteps from "@/components/ProcessSteps";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -40,25 +41,71 @@ export default function Home() {
       
       <Hero />
       
-      <section id="expertise" className="py-20 bg-white">
+      <section id="process" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose Vyoma?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">The 4-Phase Transformation</h2>
             <p className="text-lg text-slate-600">
-              We combine deep industry expertise with state-of-the-art AI technology to transform your business operations.
+              A structured, AI-driven approach to de-risk your S/4HANA migration.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <FeatureCard 
-                key={index} 
-                title={feature.title} 
-                description={feature.description}
-                icon={feature.icon}
-              />
-            ))}
-          </div>
+          <ProcessSteps />
+        </div>
+      </section>
+
+      <section id="challenges" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                     <span className="text-indigo-600 font-semibold tracking-wide uppercase text-sm">Why It Matters</span>
+                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-6">
+                        Eliminate the Chaos of Manual Migration
+                     </h2>
+                     <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Traditional S/4HANA projects fail due to unclear scope, lack of documentation, and resistance to change. Vyoma tackles these head-on.
+                     </p>
+                     
+                     <div className="space-y-6">
+                        {[
+                            { title: "Scope Creep", desc: "AI-defined scope based on actual data, not guess work." },
+                            { title: "Process Variations", desc: "Automated standardization to SAP Best Practices." },
+                            { title: "Testing Fatigue", desc: "Auto-generated test cases and sandboxes." }
+                        ].map((item, i) => (
+                            <div key={i} className="flex gap-4">
+                                <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-red-50 flex items-center justify-center text-red-500">
+                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-slate-900">{item.title}</h4>
+                                    <p className="text-slate-600 text-sm">{item.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                     </div>
+                </div>
+                <div className="relative">
+                    <div className="bg-indigo-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                        <h3 className="text-2xl font-bold mb-6 relative z-10">Integration Capabilities</h3>
+                        <div className="grid grid-cols-2 gap-4 relative z-10">
+                            <div className="bg-indigo-800/50 p-4 rounded-xl border border-indigo-700/50">
+                                <div className="text-3xl font-bold text-indigo-300 mb-1">95%</div>
+                                <div className="text-xs text-indigo-200">Accuracy in Process Mapping</div>
+                            </div>
+                            <div className="bg-indigo-800/50 p-4 rounded-xl border border-indigo-700/50">
+                                <div className="text-3xl font-bold text-indigo-300 mb-1">60%</div>
+                                <div className="text-xs text-indigo-200">Faster Project Timelines</div>
+                            </div>
+                            <div className="bg-indigo-800/50 p-4 rounded-xl border border-indigo-700/50 col-span-2">
+                                <div className="text-3xl font-bold text-indigo-300 mb-1">24/7</div>
+                                <div className="text-xs text-indigo-200">AI-Powered Support & Analysis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </section>
 

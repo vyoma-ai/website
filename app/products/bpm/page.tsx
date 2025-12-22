@@ -36,36 +36,77 @@ export default function BpmProductPage() {
                 </div>
                 <div className="relative">
                     <div className="relative rounded-xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800/50 backdrop-blur-sm p-4">
-                        <div className="bg-slate-900 rounded-lg aspect-[4/3] flex flex-col relative overflow-hidden border border-slate-700/50">
-                             {/* Mockup of the actual dashboard */}
-                             <div className="h-12 border-b border-slate-700 flex items-center px-4 space-x-2">
-                                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                        <div className="bg-slate-900 rounded-lg aspect-[16/10] flex flex-col relative overflow-hidden border border-slate-700/50">
+                             {/* Global Manufacturing Dashboard Mockup */}
+                             <div className="h-10 border-b border-slate-700 flex items-center justify-between px-4 bg-slate-800/50">
+                                <div className="flex gap-2">
+                                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <div className="text-xs text-slate-400 font-mono">Vyoma v2.4 - Global Mfg Dashboard</div>
                              </div>
                              <div className="flex-1 flex">
-                                <div className="w-16 border-r border-slate-700 bg-slate-800/30 flex flex-col items-center py-4 space-y-4">
-                                    <div className="w-8 h-8 rounded bg-indigo-500/20"></div>
-                                    <div className="w-8 h-8 rounded bg-slate-700"></div>
-                                    <div className="w-8 h-8 rounded bg-slate-700"></div>
+                                {/* Sidebar */}
+                                <div className="w-16 border-r border-slate-700 bg-slate-800/30 flex flex-col items-center py-4 space-y-6">
+                                    <div className="w-8 h-8 rounded bg-indigo-500/20 border border-indigo-500/30"></div>
+                                    <div className="w-6 h-6 rounded bg-slate-700/50"></div>
+                                    <div className="w-6 h-6 rounded bg-slate-700/50"></div>
+                                    <div className="w-6 h-6 rounded bg-slate-700/50"></div>
+                                    <div className="mt-auto w-6 h-6 rounded-full bg-indigo-400/20"></div>
                                 </div>
-                                <div className="flex-1 p-6">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <div className="h-6 w-1/3 bg-slate-700 rounded"></div>
-                                        <div className="h-8 w-24 bg-indigo-600 rounded"></div>
+                                {/* Main Content */}
+                                <div className="flex-1 p-6 overflow-hidden">
+                                    <div className="flex justify-between items-center mb-8">
+                                        <div>
+                                            <h3 className="text-white font-bold text-lg">Global Manufacturing ECC to S/4HANA</h3>
+                                            <p className="text-slate-400 text-xs">Last updated: Just now via Flowee AI</p>
+                                        </div>
+                                        <div className="flex gap-2">
+                                            <span className="px-2 py-1 rounded bg-green-500/10 text-green-400 text-xs border border-green-500/20">On Track</span>
+                                            <span className="px-2 py-1 rounded bg-indigo-500/10 text-indigo-400 text-xs border border-indigo-500/20">Phase: Analyze</span>
+                                        </div>
                                     </div>
-                                    <div className="grid grid-cols-3 gap-4">
-                                        <div className="h-32 bg-slate-800 rounded border border-slate-700 p-4">
-                                            <div className="h-4 w-1/2 bg-slate-600 rounded mb-2"></div>
-                                            <div className="h-8 w-full bg-slate-700/50 rounded"></div>
+                                    
+                                    <div className="grid grid-cols-3 gap-4 mb-6">
+                                        <div className="bg-slate-800 rounded-lg border border-slate-700 p-3">
+                                            <p className="text-slate-400 text-[10px] uppercase">Process Coverage</p>
+                                            <p className="text-xl font-bold text-white mt-1">85%</p>
+                                            <div className="w-full bg-slate-700 h-1 mt-2 rounded-full overflow-hidden">
+                                                <div className="bg-indigo-500 w-[85%] h-full rounded-full"></div>
+                                            </div>
                                         </div>
-                                        <div className="h-32 bg-slate-800 rounded border border-slate-700 p-4">
-                                            <div className="h-4 w-1/2 bg-slate-600 rounded mb-2"></div>
-                                            <div className="h-8 w-full bg-slate-700/50 rounded"></div>
+                                        <div className="bg-slate-800 rounded-lg border border-slate-700 p-3">
+                                            <p className="text-slate-400 text-[10px] uppercase">Gap Analysis</p>
+                                            <p className="text-xl font-bold text-white mt-1">12 Critical</p>
+                                            <div className="w-full bg-slate-700 h-1 mt-2 rounded-full overflow-hidden">
+                                                <div className="bg-red-500 w-[40%] h-full rounded-full"></div>
+                                            </div>
                                         </div>
-                                        <div className="h-32 bg-slate-800 rounded border border-slate-700 p-4">
-                                            <div className="h-4 w-1/2 bg-slate-600 rounded mb-2"></div>
-                                            <div className="h-8 w-full bg-slate-700/50 rounded"></div>
+                                        <div className="bg-slate-800 rounded-lg border border-slate-700 p-3">
+                                            <p className="text-slate-400 text-[10px] uppercase">RTM Completion</p>
+                                            <p className="text-xl font-bold text-white mt-1">92%</p>
+                                            <div className="w-full bg-slate-700 h-1 mt-2 rounded-full overflow-hidden">
+                                                <div className="bg-green-500 w-[92%] h-full rounded-full"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="bg-slate-800/50 rounded-lg border border-slate-700 p-4 h-full">
+                                        <div className="flex gap-2 mb-4">
+                                            <div className="h-2 w-20 bg-slate-600 rounded"></div>
+                                            <div className="h-2 w-10 bg-slate-700 rounded"></div>
+                                        </div>
+                                        <div className="space-y-3">
+                                            {[1, 2, 3].map((i) => (
+                                                <div key={i} className="flex items-center justify-between p-2 bg-slate-800 rounded border border-slate-700/50">
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="w-4 h-4 rounded-sm bg-indigo-500/20 border border-indigo-500/30"></div>
+                                                        <div className="h-2 w-32 bg-slate-600 rounded"></div>
+                                                    </div>
+                                                    <div className="h-2 w-12 bg-slate-700 rounded"></div>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
@@ -89,29 +130,29 @@ export default function BpmProductPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <FeatureCard 
+                    title="Process Generation"
+                    description="Upload your legacy documents and let AI automatically generate detailed BPMN 2.0 diagrams in seconds."
+                    icon={
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                        </svg>
+                    }
+                />
+                <FeatureCard 
+                    title="Gap Analysis & RTM"
+                    description="Automatically compare your processes against SAP Best Practices and generate a Requirements Traceability Matrix."
+                    icon={
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                    }
+                />
+                <FeatureCard 
                     title="Flowee AI Assistant"
-                    description="Your intelligent co-pilot for process documentation and analysis. Track token usage and optimize workflows with AI."
+                    description="Your intelligent co-pilot for process documentation, token usage tracking, and optimization suggestions."
                     icon={
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                        </svg>
-                    }
-                />
-                <FeatureCard 
-                    title="BPMN 2.0 Visualization"
-                    description="Standard-compliant visual modeling with split-pane documentation view. seamlessly switch between diagram and details."
-                    icon={
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                    }
-                />
-                <FeatureCard 
-                    title="Process Hierarchy"
-                    description="Organize complex enterprise workflows into Containers and Levels (L0, L1) with intuitive Tree and Card views."
-                    icon={
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
                         </svg>
                     }
                 />
