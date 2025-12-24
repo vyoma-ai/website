@@ -5,15 +5,15 @@ export default function Guarantee() {
   return (
     <main className="min-h-screen pt-24">
       <Navbar />
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">Our Risk-Free Guarantee</h1>
-          <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6">Our Risk-Free Guarantee</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
             We are so confident in our platform that we guarantee the performance impact.
           </p>
-          <div className="max-w-3xl mx-auto p-12 bg-success/5 rounded-3xl border border-success/20 text-left">
-             <h2 className="text-2xl font-bold text-slate-900 mb-6">The Vyoma Commitment</h2>
-             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+          <div className="max-w-3xl mx-auto p-12 bg-success/5 dark:bg-success/10 rounded-3xl border border-success/20 text-left">
+             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">The Vyoma Commitment</h2>
+             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
                If Vyoma does not deliver the documented efficiency gains or TCO reduction within the agreed timeline, we will complete the remaining work ourselves at no additional cost to your organization.
              </p>
              <div className="flex items-center gap-4 text-success font-bold text-xl">
