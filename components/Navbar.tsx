@@ -18,11 +18,9 @@ const Navbar = () => {
 
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Products", href: "/products/bpm" },
-    { name: "Expertise", href: "/#expertise" },
-    { name: "Services", href: "/#services" },
-    { name: "About", href: "/#about" },
+    { name: "Use Cases", href: "/#use-cases" },
+    { name: "ROI Calculator", href: "/roi-calculator" },
+    { name: "Pricing", href: "/pricing" },
   ];
 
   return (
@@ -56,9 +54,11 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:block">
-            <Button variant="primary" size="sm">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button variant="primary" size="sm" className="bg-accent hover:bg-red-500 border-none">
+                Book Demo
+              </Button>
+            </Link>
           </div>
 
           <div className="-mr-2 flex md:hidden">

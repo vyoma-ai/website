@@ -3,15 +3,17 @@
 @theme {
   --font-sans: var(--font-inter);
 
-  --color-primary: #6366f1;
-  /* Indigo 500 */
-  --color-primary-dark: #4f46e5;
-  /* Indigo 600 */
-  --color-secondary: #0f172a;
-  /* Slate 900 */
+  --color-primary: #0066CC;
+  /* Vyoma Blue */
+  --color-primary-dark: #0052A3;
+  /* Vyoma Dark Blue */
+  --color-secondary: #1A1A1A;
+  /* Footer/Dark Background */
 
-  --color-accent: #8b5cf6;
-  /* Violet 500 */
+  --color-accent: #FF6B6B;
+  /* Vyoma Coral */
+  --color-success: #2ECC71;
+  /* Vyoma Green */
 
   --animate-fade-in: fade-in 0.5s ease-out;
   --animate-slide-up: slide-up 0.5s ease-out;
@@ -46,7 +48,7 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-dark;
   }
 }
 
