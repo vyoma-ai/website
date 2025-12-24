@@ -21,18 +21,18 @@ const Footer = () => {
           <div>
             <h4 className="text-slate-900 dark:text-white font-bold mb-6 uppercase tracking-widest text-xs">Solutions</h4>
             <ul className="space-y-4 text-sm font-bold">
-              <li><Link href="/#use-cases" className="hover:text-primary transition-colors">S/4HANA Conversion</Link></li>
-              <li><Link href="/#use-cases" className="hover:text-primary transition-colors">Release Optimization</Link></li>
-              <li><Link href="/roi-calculator" className="hover:text-primary transition-colors">ROI Assessment</Link></li>
+              <li><Link href="/#use-cases" className="hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">S/4HANA Conversion</Link></li>
+              <li><Link href="/#use-cases" className="hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">Release Optimization</Link></li>
+              <li><Link href="/roi-calculator" className="hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">ROI Assessment</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-slate-900 dark:text-white font-bold mb-6 uppercase tracking-widest text-xs">Company</h4>
             <ul className="space-y-4 text-sm font-bold">
-              <li><Link href="/pricing" className="hover:text-primary transition-colors">Pricing Plans</Link></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors">Book a Demo</Link></li>
-              <li><Link href="/guarantee" className="hover:text-primary transition-colors">Performance Guarantee</Link></li>
+              <li><Link href="/pricing" className="hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">Pricing Plans</Link></li>
+              <li><Link href="/contact" className="hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">Book a Demo</Link></li>
+              <li><Link href="/guarantee" className="hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">Performance Guarantee</Link></li>
             </ul>
           </div>
           

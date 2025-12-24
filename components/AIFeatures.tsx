@@ -65,7 +65,7 @@ const AIFeatures = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className={`glass-dark p-8 rounded-[32px] border-black/5 dark:border-white/5 hover:border-primary/30 transition-all duration-500 group flex flex-col ${feature.className}`}
+              className={`glass-dark p-8 rounded-[32px] border-black/5 dark:border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 group flex flex-col ${feature.className}`}
             >
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_20px_rgba(0,209,255,0.1)]">
                 {feature.icon}

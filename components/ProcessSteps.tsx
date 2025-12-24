@@ -49,7 +49,7 @@ const ProcessSteps = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {steps.map((step) => (
         <div key={step.id} className="relative group">
-          <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 relative z-10 h-full">
+          <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative z-10 h-full">
             <div className="flex justify-between items-start mb-6">
                  <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                     {step.icon}
@@ -58,7 +58,7 @@ const ProcessSteps = () => {
                     {step.id}
                  </span>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">{step.title}</h3>
             <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
           </div>
           {/* Connector Line (visible on desktop) */}

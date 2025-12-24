@@ -59,7 +59,7 @@ const UseCases = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-8 py-3.5 rounded-xl font-bold text-sm transition-all duration-500 ${
+                className={`px-8 py-3.5 rounded-xl font-bold text-sm transition-all duration-500 active:scale-95 ${
                   activeTab === tab.id 
                     ? 'bg-primary text-slate-950 shadow-[0_0_15px_rgba(0,209,255,0.4)]' 
                     : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
@@ -119,7 +119,7 @@ const UseCases = () => {
                   </thead>
                   <tbody className="divide-y divide-white/5">
                     {current.impact.map((row, i) => (
-                      <tr key={i} className="hover:bg-white/5 transition-all group">
+                      <tr key={i} className="hover:bg-white/5 transition-all duration-300 hover:scale-[1.01] group">
                         <td className="px-8 py-6 font-bold text-slate-700 dark:text-slate-300 group-hover:text-primary dark:group-hover:text-white">{row.metric}</td>
                         <td className="px-8 py-6 text-slate-500 text-center">{row.without}</td>
                         <td className="px-8 py-6 text-right">

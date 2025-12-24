@@ -6,7 +6,7 @@ const CTABanner = () => {
   return (
     <section className="py-32 bg-slate-50 dark:bg-slate-950 relative overflow-hidden transition-colors duration-300">
       {/* Background Glows */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="p-12 md:p-20 rounded-[48px] border-black/5 dark:border-white/10 text-center relative overflow-hidden shadow-2xl">
@@ -27,7 +27,7 @@ const CTABanner = () => {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" className="bg-slate-200 dark:bg-white/5 hover:bg-slate-300 dark:hover:bg-white/10 text-slate-900 dark:text-white font-bold border border-black/5 dark:border-white/10 px-12 py-7 rounded-2xl transition-all text-xl">
+              <Button size="lg" className="bg-slate-200 dark:bg-white/5 hover:bg-slate-300 dark:hover:bg-white/10 text-slate-900 dark:text-white font-bold border border-black/5 dark:border-white/10 px-12 py-7 rounded-2xl transition-all hover:scale-105 active:scale-95 text-xl">
                 Book Your Demo
               </Button>
             </Link>
