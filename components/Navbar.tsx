@@ -20,9 +20,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Use Cases", href: "/#use-cases" },
+    { name: "Products", href: "/#what-is-vyoma" },
+    { name: "Solutions", href: "/#use-cases" },
     { name: "ROI Calculator", href: "/roi-calculator" },
     { name: "Pricing", href: "/pricing" },
+    { name: "Resources", href: "/resources" },
+    { name: "Company", href: "/about" },
   ];
 
   return (

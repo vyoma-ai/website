@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-50 dark:bg-slate-950 text-slate-600 dark:text-slate-400 py-20 border-t border-black/5 dark:border-white/5 relative overflow-hidden transition-colors duration-300">
+    <footer className="mt-20 bg-slate-50 dark:bg-slate-950 text-slate-600 dark:text-slate-400 py-20 border-t border-black/5 dark:border-white/5 relative overflow-hidden transition-colors duration-300">
       {/* Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
       
